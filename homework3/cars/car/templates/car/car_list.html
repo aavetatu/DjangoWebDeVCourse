@@ -1,0 +1,9 @@
+{% extends "car/base.html" %}
+
+{% block "content" %}
+	<h1>List of Cars</h1>
+	<p><b><a href="car/new">+ Add A New Car</a></b></p>
+	{% for object in object_list %}
+		<p><a href="/car/{{ object.pk }}">{{ object }}</a></p>
+	{% endfor %}
+{% endblock "content" %}

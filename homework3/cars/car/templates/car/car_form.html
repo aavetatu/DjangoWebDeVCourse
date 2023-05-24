@@ -1,0 +1,14 @@
+{% extends "car/base.html" %}
+
+{% block "content" %}
+	<h1>Create/Edit Car</h1>
+	<form method=post>
+		{% csrf_token %}
+		{{ form.as_p }}
+		<input type=submit value="Submit">
+	<form>	
+
+	{% if object %}
+		<p><a href="/car/{{ object.pk }}/delete">Delete</a></p>
+	{% endif %}
+{% endblock "content" %}
