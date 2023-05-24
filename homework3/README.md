@@ -1,8 +1,15 @@
 # Homework 3
 
-In this homework I made an app where you can create, read, update and delete things in a database
+In this homework I made an app where you can create, read, update and delete records in a database
 
-**Links to edited files on this project might be added in the future**
+
+### Future development ideas
+
+- Currently while editing and creating new records in database you can see the value of a car but it isn't shown in the list view
+
+- Add "cancel" button/link on create/edit/delete views
+
+** Links to edited files on this project might be added in the future**
 
 ## Sources: 
 
