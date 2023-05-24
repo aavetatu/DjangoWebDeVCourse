@@ -9,7 +9,7 @@ In this homework I made an app where you can create, read, update and delete rec
 
 - Add "cancel" button/link on create/edit/delete views
 
-** Links to edited files on this project might be added in the future**
+- **Links to edited files on this project might be added in the future**
 
 ## Sources: 
 
