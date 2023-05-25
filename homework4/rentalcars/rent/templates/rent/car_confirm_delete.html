@@ -1,0 +1,11 @@
+{% extends "rent/base.html" %}
+
+{% block "content" %}
+	<form method=post>
+		{% csrf_token %}
+		<p>Permanently delete <b>{{ object }}</b>?</p>
+		<p>This action cannot be reversed!</p>
+		<input type=submit value="Delete">
+	</form>
+	<p><a href="/">Cancel</a></p>
+{% endblock "content" %}

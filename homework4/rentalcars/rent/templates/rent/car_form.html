@@ -1,0 +1,15 @@
+{% extends "rent/base.html" %}
+
+{% block "content" %}
+	<form method=post>
+		{% csrf_token %}
+		{{ form.as_p}}
+		<input type=submit value="save">
+	</form>
+	<p>
+		<a href="/">Cancel</a>
+		{% if object %}
+		<a href="/rent/{{ object.pk }}/delete">Delete</a>
+		{% endif %}
+	</p>
+{% endblock "content" %}

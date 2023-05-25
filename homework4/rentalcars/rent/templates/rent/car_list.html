@@ -1,0 +1,9 @@
+{% extends "rent/base.html" %}
+
+{% block "content" %}
+	{% for object in object_list %}
+		<p><a href="/rent/{{ object.pk }}">{{ object.name }}</a> Available in: {{ object.dealership }}</p>
+	{% endfor %}
+
+	<p><a href="/rent/new">Add new car</a></p>
+{% endblock "content" %}
