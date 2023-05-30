@@ -1,0 +1,13 @@
+{% extends "journal/base.html" %}
+
+{% block "content" %}
+	<h1>Your Journal</h1>
+	<p><a href="/journal/new"><b>+ Log new entry</b></a></p>
+	{% for log in object_list %}
+		<p>
+			{{ log.created|date:"m-d" }}
+			<a href="/journal/{{ log.pk }}">{{ log.name }}</a>
+		 	({{ log.get_status_display }})
+		</p>
+	{% endfor %}
+{% endblock "content" %}

@@ -1,0 +1,21 @@
+{% extends "journal/base.html" %}
+
+{% block "content" %}
+	{% if object %}
+		<h1>Edit old entry</h1>
+	{% else %}
+		<h1>Create new entry</h1>
+	{% endif %}
+	
+	<form method=post>
+		{% csrf_token %}
+		{{ form.as_p}}
+		<input type=submit value="save">
+	</form>
+	<p>
+		<a href="/">Cancel</a>
+		{% if object %}
+		<a href="/journal/{{ object.pk }}/delete">Delete</a>
+		{% endif %}
+	</p>
+{% endblock "content" %}
