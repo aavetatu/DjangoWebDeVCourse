@@ -8,6 +8,7 @@ The purfose of this project is to be able to create, update, read and delete jou
 
 ![image](https://github.com/aavetatu/DjangoWebDevCourse/assets/52470440/6d6bcf36-953e-4bb9-b0f3-5ff93ba9c724)
 
+![image](https://github.com/aavetatu/DjangoWebDevCourse/assets/52470440/117a06f1-a723-47e9-b281-e31494290ef6)
 
 **[Link to demo](http://tatuheikkinen.com)**
 
